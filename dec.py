@@ -1,7 +1,5 @@
 
-#! C:\Users\baysq\Documents\ABISOJEM\AI_Water\projects\water\Scripts\python.exe
-
-#import sys
+import sys
 import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
@@ -9,7 +7,7 @@ from sklearn.tree import DecisionTreeRegressor
 from sklearn import metrics
 
 # Load data 
-project_data = pd.read_csv("rbsn_credit_card.csv")
+project_data = pd.read_csv("credit_card.csv")
 
 # separate data 
 X = project_data.drop('Class', axis =1)
